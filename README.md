@@ -1,6 +1,6 @@
 #  IT Service Ticket Classification System
 
-## 📌 Project Overview
+##  Project Overview
 This project is an **AI-powered Support Ticket Classification System** designed to automate the triage process for IT support teams. 
 It uses **Machine Learning (Logistic Regression with TF-IDF)** to:
 1.  **Classify Tickets**: Automatically categorizes tickets (e.g., Hardware, Access, Software).
