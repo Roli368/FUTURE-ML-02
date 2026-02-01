@@ -5,7 +5,7 @@ import seaborn as sns
 from sklearn.metrics import confusion_matrix
 import os
 
-# Paths
+
 DATA_PATH = "data/processed/clean_tickets.csv"
 MODEL_PATH = "models/category_model.pkl"
 VECTORIZER_PATH = "models/tfidf_vectorizer.pkl"
@@ -14,7 +14,7 @@ OUTPUT_PATH = "models/confusion_matrix.png"
 def generate_visualization():
     print("📊 Generating Model Performance Visualization...")
     
-    # Load resources
+    
     if not os.path.exists(DATA_PATH):
         raise FileNotFoundError("Data file not found.")
         
@@ -43,7 +43,7 @@ def generate_visualization():
     plt.xticks(rotation=45, ha='right')
     plt.tight_layout()
     
-    # Save
+   
     plt.savefig(OUTPUT_PATH)
     print(f"✅ Confusion Matrix saved to {OUTPUT_PATH}")
 

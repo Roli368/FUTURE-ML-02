@@ -11,25 +11,13 @@ MODELS_DIR = "models"
 PRIORITY_MODEL_PATH = os.path.join(MODELS_DIR, "priority_model.pkl")
 
 def train_model():
-    """
-    Trains the Logistic Regression model for Support Ticket Classification.
-    
-    This function:
-    1. Loads processed data.
-    2. Vectorizes text using TF-IDF.
-    3. Splits data into Train/Test sets.
-    4. Trains a LogisticRegression model with class balancing.
-    5. Saves the model and vectorizer to disk.
-    
-    Raises:
-        FileNotFoundError: If processed data is missing.
-    """
-    print("🚀 Starting model training (Category Only)...")
+   
+    print(" Starting model training (Category Only)...")
     
     if not os.path.exists(DATA_PATH):
         raise FileNotFoundError(f" Processed data not found at {DATA_PATH}. Run preprocessing.py first.")
 
-    # Load data
+   
     df = pd.read_csv(DATA_PATH)
     df.dropna(subset=["clean_text"], inplace=True)
     

@@ -7,27 +7,18 @@ PROCESSED_DATA_DIR = "data/processed"
 PROCESSED_FILE_PATH = os.path.join(PROCESSED_DATA_DIR, "clean_tickets.csv")
 
 def preprocess():
-    """
-    Cleans the raw ticket dataset and saves it for training.
-    
-    Steps:
-    1. Loads 'data/raw/all_tickets.csv'.
-    2. Maps 'Topic_group' to 'Ticket Type' and 'Document' to 'clean_text'.
-    3. Applies text cleaning (lowercase, remove stopwords).
-    4. Saves the result to 'data/processed/clean_tickets.csv'.
-    """
-    print("🚀 Starting preprocessing for IT Service Tickets...")
+   
+    print(" Starting preprocessing for IT Service Tickets...")
     
     if not os.path.exists(RAW_PATH):
         raise FileNotFoundError(f" Raw data not found at {RAW_PATH}")
 
-    # Load data
+   
     df = pd.read_csv(RAW_PATH)
     print(f" Loaded {len(df)} rows from {RAW_PATH}")
     print(f"Columns: {list(df.columns)}")
 
-    # Specific mapping for AdisonGoh's IT Service Ticket Dataset
-    # Columns expected: 'Document', 'Topic_group'
+   
     if "Document" not in df.columns or "Topic_group" not in df.columns:
         raise ValueError(f" Unexpected columns. Expected 'Document' and 'Topic_group'. Found: {list(df.columns)}")
 

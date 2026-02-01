@@ -18,18 +18,7 @@ except FileNotFoundError:
     vectorizer = None
 
 def predict_ticket(text):
-    """
-    Predicts the Category and Priority for a given support ticket.
-
-    Args:
-        text (str): The raw text of the support ticket.
-
-    Returns:
-        dict: A dictionary containing:
-            - 'category': The predicted ticket category (e.g., 'Hardware', 'Access').
-            - 'priority': The assigned priority ('High', 'Medium', 'Low').
-            - 'error': Error message if models are not loaded (optional).
-    """
+    
     if not category_model:
         return {"error": "Model not loaded"}
     

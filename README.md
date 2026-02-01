@@ -1,4 +1,4 @@
-# 🎫 IT Service Ticket Classification System
+#  IT Service Ticket Classification System
 
 ## 📌 Project Overview
 This project is an **AI-powered Support Ticket Classification System** designed to automate the triage process for IT support teams. 
@@ -8,13 +8,13 @@ It uses **Machine Learning (Logistic Regression with TF-IDF)** to:
 
 built with **Python**, **Scikit-Learn**, and **Streamlit**.
 
-## 🚀 Features
+##  Features
 - **Smart Priority Logic**: Automatically detects urgent keywords (e.g., "broken", "critical", "leaver") to assign High Priority.
 - **Interactive UI**: A professional web interface built with **Streamlit**.
 - **Data-Driven**: Trained on a dataset of 50,000+ support tickets.
 - **Balanced Model**: Handles class imbalance to ensure fair prediction across all categories.
 
-## 📂 Project Structure
+##  Project Structure
 ```
 support-ticket-classification/
 ├── data/
@@ -32,7 +32,7 @@ support-ticket-classification/
 └── README.md                 # Project Documentation
 ```
 
-## 🛠️ Setup & Installation
+## Setup & Installation
 
 **1. Clone the repository / Open in VS Code**
 - Open the folder `support-ticket-classification` in **VS Code**.
@@ -54,14 +54,14 @@ pip install -r requirements.txt
 python src/train.py
 ```
 
-## ▶️ How to Run the App
+##  How to Run the App
 To launch the User Interface, run:
 ```bash
 streamlit run src/streamlit_app.py
 ```
 The app will open in your browser automatically.
 
-## 📊 Model Details
+## Model Details
 - **Algorithm**: Logistic Regression
 - **Vectorization**: TF-IDF (10,000 features)
 - **Accuracy**: ~84% (Weighted Average)

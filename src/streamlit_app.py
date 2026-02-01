@@ -3,12 +3,11 @@ from predict import predict_ticket
 
 st.set_page_config(page_title="Ticket Classifier", layout="centered")
 
-# --- App Logo (Replaces 🎫) ---
+
 st.image("https://placehold.co/800x200/2980B9/FFFFFF?text=Support+Ticket+System", use_container_width=True)
 st.title("IT Service Ticket Classifier")
 st.write("Enter your issue below to classify the support ticket.")
 
-# --- Input Icon (Replaces 📝) ---
 st.image("https://placehold.co/200x50/34495E/FFFFFF?text=Ticket+Details", width=150)
 user_input = st.text_area("Ticket Description", height=200, placeholder="Describe your issue here...")
 
@@ -24,7 +23,7 @@ if st.button("Predict Category"):
         else:
             st.success("Classification Complete")
             
-            # --- Image Assets (Replace these URLs with your own hosted images) ---
+            
             category_images = {
                 "Hardware": "https://placehold.co/600x200/2C3E50/FFFFFF?text=Hardware+Issue",
                 "Access": "https://placehold.co/600x200/E74C3C/FFFFFF?text=Access+Denied",
@@ -45,7 +44,7 @@ if st.button("Predict Category"):
             col1, col2 = st.columns(2)
             
             with col1:
-                # Category Icon (Replaces 📂)
+              
                 st.image("https://placehold.co/50x50/2980B9/FFFFFF?text=Cat", width=40)
                 st.markdown("**Category**")
                 cat = result['category']
@@ -54,7 +53,7 @@ if st.button("Predict Category"):
                 st.caption(f"Detected: {cat}")
             
             with col2:
-                # Priority Icon (Replaces 🔥)
+             
                 st.image("https://placehold.co/50x50/C0392B/FFFFFF?text=imp", width=40)
                 st.markdown("**Priority**")
                 prio = result.get('priority', 'Low')
