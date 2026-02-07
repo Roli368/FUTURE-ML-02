@@ -69,5 +69,6 @@ The app will open in your browser automatically.
 
 
 ### deployed link  
+ https://share.google/0hBS9MxuUQOrElf9U
 ![alt text](image-1.png)
 ![alt text](image.png)
