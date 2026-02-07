@@ -41,7 +41,7 @@ support-ticket-classification/
 **2. Create a Virtual Environment (Optional but Recommended)**
 ```bash
 python -m venv venv
-source venv/Scripts/activate  # Windows (Git Bash/PowerShell)
+source venv/Scripts/activate  
 ```
 
 **3. Install Dependencies**
@@ -66,3 +66,8 @@ The app will open in your browser automatically.
 - **Vectorization**: TF-IDF (10,000 features)
 - **Accuracy**: ~84% (Weighted Average)
 - **Priority Logic**: Hybrid (ML category + Keyword Heuristics)
+
+
+### deployed link  
+![alt text](image-1.png)
+![alt text](image.png)
